@@ -15,7 +15,7 @@ func in_array(single interface{}, array interface{}) (in bool, err error) {
 		a := single.(string)
 		b, ok := array.([]string)
 		if !ok {
-			return false, errors.New("Second parameter does not accept")
+			return false, errors.New("second parameter does not accept")
 		}
 		for _, v := range b {
 			if v == a {
